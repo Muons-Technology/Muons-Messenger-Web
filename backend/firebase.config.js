@@ -4,13 +4,13 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD3TbQkcZHqPRMclK94HkdQLT0u4W2a7gs",
-  authDomain: "muons-messenger.firebaseapp.com",
-  projectId: "muons-messenger",
-  storageBucket: "muons-messenger.appspot.com",
-  messagingSenderId: "577448916734",
-  appId: "1:577448916734:web:9271139d8c1a146281d7af",
-  measurementId: "G-406HJJWRSG"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
